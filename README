@@ -1,0 +1,29 @@
+meta-router
+
+Add iptables, masquerade and aync PPP support to 4.10 kernel
+
+
+Table of Contents
+=================
+
+  I. Adding this layer to your build
+
+
+I. Adding the teejet layer to your build
+=================================================
+
+
+In order to use this layer, you need to make the build system aware of
+it.
+
+Assuming the router layer exists at the top-level of your
+yocto build tree, you can add it to the build system by adding the
+location of the router layer to bblayers.conf, along with any
+other layers needed. e.g.:
+
+  BBLAYERS ?= " \
+    /path/to/yocto/meta \
+    /path/to/yocto/meta-yocto \
+    /path/to/yocto/meta-yocto-bsp \
+    /path/to/yocto/meta-router \
+    "
